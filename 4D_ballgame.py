@@ -67,8 +67,8 @@ class Ball():
     def bounce(self, padx, pady, padz, padw, dist, paddle_radius):
         """Calculate new speed for the ball based on paddle coordinates (padx, pady..)
         and distance the ball is inside the paddle. Speed is calculated by finding the
-        surface normal vector at the point of contact, calculating the reclection
-        with dot product of of normal vector and speed vector. If ball is inside the
+        surface normal vector at the point of contact, calculating the reflection
+        using dot product of surface normal vector and speed vector. If ball is inside the
         paddle, move it to the edge."""
         
         dx = self.x - padx
